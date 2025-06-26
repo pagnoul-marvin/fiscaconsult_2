@@ -1,0 +1,18 @@
+.transition {
+    opacity: 0;
+    -webkit-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    transform: translateX(40px);
+    -webkit-transition: opacity 1.2s ease-out, -webkit-transform 1.2s ease-out;
+    transition: opacity 1.2s ease-out, -webkit-transform 1.2s ease-out;
+    -o-transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out, -webkit-transform 1.2s ease-out;
+}
+
+.transition.visible {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}

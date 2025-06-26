@@ -1,23 +1,25 @@
-<section id="contact" class="contact">
+<section id="contact" class="contact transition" x-data="{ visible: false }"
+         x-intersect.once="visible = true"
+         :class="{ 'visible': visible }">
     <div class="contact_content">
         <div class="contact_content_contact">
             <h2 class="primary_title">Nous contacter</h2>
 
-            <div>
-                <div>
-                    <h3 class="bold">Olivier Pagnoul</h3>
-                    <p>Expert-comptable fiscaliste</p>
-                    <p>ITAA 10.960.491</p>
-                    <a href="tel:+32476262639" title="Téléphoner">+32 (0) 476.26.26.39</a>
-                    <a href="mailto:olivier.pagnoul@fiscaconsult.com" title="Envoyer un mail">olivier.pagnoul@fiscaconsult.com</a>
+            <div class="contact_content_contact_texts">
+                <div class="contact_content_contact_texts_oli" itemscope itemtype="https://schema.org/Person">
+                    <h3 class="bold" itemprop="name">Olivier Pagnoul</h3>
+                    <p itemprop="jobTitle">Expert-comptable fiscaliste</p>
+                    <p><abbr title="Institute for Tax Advisors and Accountants" lang="en" class="abbr">ITAA</abbr> 10.960.491</p>
+                    <a class="contact_content_contact_texts_oli_link link" href="tel:+32476262639" title="T&eacute;l&eacute;phoner" itemprop="telephone">+32 (0) 476.26.26.39</a>
+                    <a class="contact_content_contact_texts_oli_link link" href="mailto:olivier.pagnoul@fiscaconsult.com" title="Envoyer un mail" itemprop="email">olivier.pagnoul@fiscaconsult.com</a>
                 </div>
 
-                <div>
-                    <h3 class="bold">Nathalie Brugmans</h3>
-                    <p>Expert-comptable fiscaliste</p>
-                    <p>ITAA 10.142.358</p>
-                    <a href="tel:+32478440913" title="Téléphoner">+32478440913</a>
-                    <a href="mailto:nathalie.brugmans@fiscaconsult.com" title="Envoyer un mail">nathalie.brugmans@fiscaconsult.com</a>
+                <div class="contact_content_contact_texts_nath" itemscope itemtype="https://schema.org/Person">
+                    <h3 class="bold" itemprop="name">Nathalie Brugmans</h3>
+                    <p itemprop="jobTitle">Expert-comptable fiscaliste</p>
+                    <p><abbr title="Institute for Tax Advisors and Accountants" lang="en" class="abbr">ITAA</abbr> 10.142.358</p>
+                    <a class="contact_content_contact_texts_nath_link link" href="tel:+32478440913" title="T&eacute;l&eacute;phoner" itemprop="telephone">+32478440913</a>
+                    <a class="contact_content_contact_texts_nath_link link" href="mailto:nathalie.brugmans@fiscaconsult.com" title="Envoyer un mail" itemprop="email">nathalie.brugmans@fiscaconsult.com</a>
                 </div>
             </div>
         </div>
@@ -25,12 +27,13 @@
         <div class="contact_content_localisation">
             <h2 class="primary_title">Nous localiser</h2>
 
-            <div>
-                <h3 class="bold">FISCA CONSULT SRL</h3>
-                <p>Grand’Route 18A</p>
-                <p>(Centre d’Affaires CLEBC)</p>
-                <p>4367 Crisnée</p>
-                <p>BCE&nbsp;:&nbsp;BE0811.531.494&nbsp;&#124;&nbsp;ITAA 50.433.936</p>
+            <div class="contact_content_localisation_texts" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                <h3 class="bold">FISCA CONSULT <abbr class="abbr" title="Société à Responsabilité Limitée" lang="fr">SRL</abbr></h3>
+                <p itemprop="streetAddress">Grand&apos;Route 18A</p>
+                <p>(Centre d&apos;Affaires CLEBC)</p>
+                <p><span itemprop="postalCode">4367</span> <span itemprop="addressLocality">Crisn&eacute;e</span></p>
+                <p><abbr title="Banque-Carrefour des Entreprises" lang="fr" class="abbr">BCE</abbr>&nbsp;:&nbsp;BE0811.531.494&nbsp;&#124;&nbsp;<abbr
+                        title="Institute for Tax Advisors and Accountants" lang="en" class="abbr">ITAA</abbr> 50.433.936</p>
             </div>
         </div>
     </div>
@@ -46,7 +49,7 @@
             </a>
         </li>
         <li class="contact_list_item">
-            <a href="tel:+32476262639" title="Téléphoner">
+            <a href="tel:+32476262639" title="T&eacute;l&eacute;phoner">
                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" fill="white">
                     <path
                         d="M16 22.621l-3.521-6.795c-.007.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.082-1.026-3.492-6.817-2.106 1.039c-1.622.845-2.298 2.627-2.289 4.843.027 6.902 6.711 18.013 12.212 18.117.575.011 1.137-.098 1.677-.345.121-.055 2.102-1.029 2.11-1.033zm4-5.621h-1v-13h1v13zm-2-2h-1v-9h1v9zm4-1h-1v-7h1v7zm-6-1h-1v-5h1v5zm-2-1h-1v-3h1v3zm10 0h-1v-3h1v3zm-12-1h-1v-1h1v1z"/>

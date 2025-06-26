@@ -1,10 +1,14 @@
-<section id="mission" class="mission">
+<section id="mission" class="mission transition" x-data="{ visible: false }"
+         x-intersect.once="visible = true"
+         :class="{ 'visible': visible }">
     <div class="mission_header">
         <div class="mission_header_text">
             <h2 class="primary_title mission_header_text_title">Notre mission</h2>
             <p class="mission_header_text_paragraph">Vous simplifier la vie, avec clart&eacute; et expertise.</p>
         </div>
-        <img src="" alt="" width="" height="" class="mission_header_img">
+        <div class="img_container">
+            <img loading="lazy" src="{{asset('assets/images/optimized/office_2.jpeg')}}" alt="Photo d'Olivier dans son bureau" width="" height="" class="mission_header_img img_container_img">
+        </div>
     </div>
 
     <ul class="mission_list">
@@ -17,7 +21,7 @@
         <div class="mission_content_first_texts_containers">
             <div class="mission_content_first_texts_containers_first">
                 <p class="mission_content_first_texts_containers_first_text">Chez <span
-                        class="bold">FISCA CONSULT</span>, nous savons
+                        class="bold" itemprop="name">FISCA CONSULT</span>, nous savons
                     qu&apos;entreprendre demande d&eacute;j&agrave; toute votre &eacute;nergie. C&apos;est pourquoi nous mettons <span class="bold">notre expertise
                     fiscale et sociale au service de votre tranquillit&eacute;.</span></p>
                 <p class="mission_content_first_texts_containers_first_text"><span

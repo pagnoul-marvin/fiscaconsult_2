@@ -1,12 +1,14 @@
-<section id="office" class="office">
+<section id="office" class="office transition" x-data="{ visible: false }"
+         x-intersect.once="visible = true"
+         :class="{ 'visible': visible }">
     <h2 class="primary_title office_title">Notre cabinet</h2>
 
     <ul class="office_list">
         <li class="office_list_item">
             <h3 class="office_list_item_title bold">35 ans d&apos;expertise comptable</h3>
-            <p class="office_list_item_text">Chez FISCA CONSULT, vous &ecirc;tes entre de bonnes mains. Depuis 1989, nous &ndash; Olivier et Nathalie,
+            <p class="office_list_item_text">Chez <span itemprop="name">FISCA CONSULT</span>, vous &ecirc;tes entre de bonnes mains. Depuis 1989, nous &ndash; Olivier et Nathalie,
                 deux experts-comptables fiscalistes passionn&eacute;s &ndash; accompagnons les <span class="bold">ind&eacute;pendants</span>, les
-                <abbr class="bold" title="Petites et moyennes entreprises">PME</abbr> et les <span class="bold">particuliers</span> avec un <span class="bold">service sur-mesure, de la cr&eacute;ation d&apos;entreprise &agrave; la cession
+                <abbr class="bold" title="Petites et moyennes entreprises" lang="fr">PME</abbr> et les <span class="bold">particuliers</span> avec un <span class="bold">service sur-mesure, de la cr&eacute;ation d&apos;entreprise &agrave; la cession
                 ou liquidation.</span></p>
         </li>
         <li class="office_list_item">
@@ -30,7 +32,7 @@
         </li>
         <li class="office_list_item">
             <h3 class="office_list_item_title bold">Une approche proactive, z&eacute;ro mauvaise surprise</h3>
-            <p class="office_list_item_text">Chez FISCA CONSULT, pas de mauvaises surprises lors des d&eacute;clarations TVA ou fiscales. <span class="bold">Tout est anticip&eacute;</span>.
+            <p class="office_list_item_text">Chez <span itemprop="name">FISCA CONSULT</span>, pas de mauvaises surprises lors des d&eacute;clarations TVA ou fiscales. <span class="bold">Tout est anticip&eacute;</span>.
                 Gr&acirc;ce &agrave; notre <span class="bold">approche proactive</span>, vous avez toujours une vision claire de votre situation. <span class="bold">La fiscalit&eacute;,
                 la TVA et le social sont g&eacute;r&eacute;s en amont, avec rigueur et transparence.</span></p>
         </li>
@@ -44,6 +46,7 @@
     <ul class="office_list">
         <li>&nbsp;</li>
         <li><a href="#contact" class="primary_btn" title="Contactez-nous">Contactez-nous</a></li>
-        <li>BCE&nbsp;:&nbsp;BE0811.531.494&nbsp;&#124;&nbsp;ITAA 50.433.936</li>
+        <li><abbr title="Banque-Carrefour des Entreprises" lang="fr" class="abbr">BCE</abbr>&nbsp;:&nbsp;BE0811.531.494&nbsp;&#124;&nbsp;<abbr
+                title="Institute for Tax Advisors and Accountants" class="abbr" lang="en">ITAA</abbr> 50.433.936</li>
     </ul>
 </section>
