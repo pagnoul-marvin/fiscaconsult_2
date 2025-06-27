@@ -34,12 +34,12 @@ class OptimizeImages extends Command
 
             $img = $manager->read($file->getPathname());
 
-            $img->scale(width: 600);
+            $img->scale(height: 600);
 
             $filename = $file->getFilename();
             $optimizedPath = $destinationPath . '/' . $filename;
 
-            $img->toJpeg(quality: 80)->save($optimizedPath);
+            $img->toJpeg(quality: 100)->save($optimizedPath);
 
             $this->info("✔ Optimisé : $filename");
         }

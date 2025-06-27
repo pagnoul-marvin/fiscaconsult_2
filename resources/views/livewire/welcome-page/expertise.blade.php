@@ -99,7 +99,7 @@
         <div class="expertise_content_img_link">
             <div class="img_container">
                 <img loading="lazy" src="{{asset('assets/images/optimized/office_4.jpeg')}}" alt="Photo d'Olivier dans son bureau"
-                     width="" height="" class="img_container_img">
+                     width="450" height="600" class="img_container_img">
             </div>
             <a href="#contact" title="Parlez-nous de vous" class="primary_btn">Parlez-nous de vous</a>
         </div>

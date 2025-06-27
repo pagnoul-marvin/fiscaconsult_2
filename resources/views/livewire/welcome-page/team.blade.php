@@ -6,7 +6,7 @@
     <div class="team_mate">
         <div class="img_container">
             <img loading="lazy" class="team_mate_img img_container_img" src="{{asset('assets/images/optimized/nathalie.jpeg')}}" alt="Photo de Nathalie"
-                 width="" height="">
+                 width="338" height="600">
         </div>
         <div class="team_mate_container" itemscope itemtype="https://schema.org/Person">
             <h3 class="team_mate_container_name bold" itemprop="name">Nathalie Brugmans</h3>
@@ -23,7 +23,7 @@
     <div class="team_mate">
         <div class="img_container">
             <img loading="lazy" class="team_mate_img img_container_img" src="{{asset('assets/images/optimized/olivier.jpeg')}}" alt="Photo d'Olivier"
-                 width="" height="">
+                 width="338" height="600">
         </div>
         <div class="team_mate_container" itemscope itemtype="https://schema.org/Person">
             <h3 class="team_mate_container_name bold" itemprop="name">Olivier Pagnoul</h3>

@@ -118,10 +118,26 @@
     z-index: 2;
 }
 
+.logo {
+    height: 50px;
+    width: auto;
+}
+
 .main_nav {
+    @include flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin: 2.875em 3.5em 0 3.5em;
     padding-bottom: $big;
     border-bottom: 2px solid $black;
+
+    .burger_menu_input, .burger_menu_label {
+        display: none;
+    }
 
     &_list {
         @include flex;
@@ -176,7 +192,7 @@
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
-        gap: 1em;
+        gap: 3em 1em;
         padding-bottom: 1.5625em;
         border-bottom: 1px solid $white;
 
@@ -207,6 +223,17 @@
                     }
                 }
             }
+        }
+
+        &_logo {
+            @include flex;
+            gap: 1em;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
         }
     }
 
@@ -397,6 +424,7 @@
 
             &_link {
                 word-break: break-word;
+                text-align: center;
 
                 &:first-of-type {
                     margin-top: 5px;
@@ -753,6 +781,7 @@
                     &_link {
                         color: $white;
                         word-break: break-word;
+                        text-align: center;
 
                         &::after {
                             background-color: $white;

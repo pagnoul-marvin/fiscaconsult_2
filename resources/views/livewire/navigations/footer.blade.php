@@ -1,8 +1,8 @@
 <footer class="footer transition" x-data="{ visible: false }"
         x-intersect.once="visible = true"
         :class="{ 'visible': visible }">
-    <nav class="footer_nav">
-        <div class="footer_nav_container">
+    <div class="footer_nav">
+        <nav class="footer_nav_container">
             <h2 class="primary_title bold">Navigation principale</h2>
 
             <ul class="footer_nav_container_list">
@@ -16,11 +16,28 @@
                                                     class="footer_nav_container_list_item_link link">Notre expertise</a></li>
             </ul>
 
+        </nav>
+
+        <nav class="footer_nav_container">
+            <h2 class="primary_title bold">Nos coordonn&eacute;es</h2>
+
+            <ul class="footer_nav_container_list">
+                <li class="footer_nav_container_list_item"><a class="footer_nav_container_list_item_link link" href="mailto:olivier.pagnoul@fiscaconsult.com" title="Envoyer un mail" itemprop="email">olivier.pagnoul@fiscaconsult.com</a></li>
+                <li class="footer_nav_container_list_item"><a class="footer_nav_container_list_item_link link" href="tel:+32476262639" title="T&eacute;l&eacute;phoner" itemprop="telephone">+32 (0) 476.26.26.39</a></li>
+                <li class="footer_nav_container_list_item" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                    <a class="footer_nav_container_list_item_link link" href="https://www.google.com/maps/place/Cle+Buisness+Center/@50.701033,5.417813,17z/data=!3m1!4b1!4m6!3m5!1s0x47c0fdee23828aff:0xb1975efc73ea6166!8m2!3d50.701033!4d5.4203879!16s%2Fg%2F11tff59m38?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D" title="Voir sur Google Maps" hreflang="fr"><span itemprop="streetAddress">Grand&apos;Route 18A</span> (Centre d&apos;Affaires CLEBC), <span itemprop="postalCode">4367</span> <span itemprop="addressLocality">Crisn&eacute;e</span></a></li>
+            </ul>
+
+        </nav>
+
+        <div class="footer_nav_logo">
+            <img loading="lazy" class="logo" src="{{asset('assets/images/optimized/ITAA_logo.jpg')}}" alt="Logo ITAA" width="755"
+                 height="600">
+
+            <x-app-logo/>
         </div>
 
-
-
-    </nav>
+    </div>
 
     <ul class="footer_list">
         <li class="footer_list_item"><a
