@@ -22,26 +22,36 @@ class OptimizeImages extends Command
         }
 
         $manager = new ImageManager(new Driver());
-
         $files = File::files($sourcePath);
 
         foreach ($files as $file) {
             $extension = strtolower($file->getExtension());
-
             if (!in_array($extension, ['jpg', 'jpeg'])) {
                 continue;
             }
 
             $img = $manager->read($file->getPathname());
-
-            $img->scale(height: 600);
-
             $filename = $file->getFilename();
-            $optimizedPath = $destinationPath . '/' . $filename;
 
-            $img->toJpeg(quality: 100)->save($optimizedPath);
+            if (str_contains($filename, 'ITAA_logo')) {
+                $targetWidth = 300;
+            } elseif (str_contains($filename, 'nathalie') || str_contains($filename, 'olivier')) {
+                $targetWidth = 500;
+            } elseif (str_contains($filename, 'office_4')) {
+                $targetWidth = 700;
+            } elseif (str_contains($filename, 'oli_nath_office') || str_contains($filename, 'office_3')) {
+                $targetWidth = 800;
+            }
 
-            $this->info("✔ Optimisé : $filename");
+            $img->scale(width: $targetWidth);
+
+            $filenameWithoutExt = pathinfo($filename, PATHINFO_FILENAME);
+            $webpFilename = $filenameWithoutExt . '.webp';
+            $webpPath = $destinationPath . '/' . $webpFilename;
+
+            $img->toWebp(quality: 100)->save($webpPath);
+
+            $this->info("✔ Optimisé : $webpFilename");
         }
 
         $this->info('✅ Toutes les images ont été compressées et redimensionnées.');
