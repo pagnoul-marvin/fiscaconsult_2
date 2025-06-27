@@ -1,0 +1,12 @@
+.transition {
+    opacity: 0;
+    -webkit-transition: opacity 1.2s ease-out;
+    transition: opacity 1.2s ease-out;
+    -o-transition: opacity 1.2s ease-out;
+    transition: opacity 1.2s ease-out;
+    transition: opacity 1.2s ease-out;
+}
+
+.transition.visible {
+    opacity: 1;
+}

@@ -1,0 +1,10 @@
+<div>
+    <livewire:welcome-page.presentation/>
+    <livewire:welcome-page.inter/>
+    <livewire:welcome-page.team/>
+    <livewire:welcome-page.office/>
+    <livewire:welcome-page.mission/>
+    <livewire:welcome-page.entrepreneur/>
+    <livewire:welcome-page.expertise/>
+    <livewire:welcome-page.contact/>
+</div>
