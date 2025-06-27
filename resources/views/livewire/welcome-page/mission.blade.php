@@ -7,7 +7,7 @@
             <p class="mission_header_text_paragraph">Vous simplifier la vie, avec clart&eacute; et expertise.</p>
         </div>
         <div class="img_container">
-            <img loading="lazy" src="{{asset('assets/images/optimized/office_2.jpeg')}}" alt="Photo d'Olivier dans son bureau" width="800" height="600" class="mission_header_img img_container_img">
+            <img loading="lazy" src="{{asset('assets/images/optimized/oli_nath_office.webp')}}" alt="Photo d'Olivier dans son bureau" width="800" height="600" class="mission_header_img img_container_img">
         </div>
     </div>
 

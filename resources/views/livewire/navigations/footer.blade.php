@@ -31,8 +31,8 @@
         </nav>
 
         <div class="footer_nav_logo">
-            <img loading="lazy" class="logo" src="{{asset('assets/images/optimized/ITAA_logo.jpg')}}" alt="Logo ITAA" width="755"
-                 height="600">
+            <img loading="lazy" class="logo" src="{{asset('assets/images/optimized/ITAA_logo.webp')}}" alt="Logo ITAA" width="300"
+                 height="238">
 
             <x-app-logo/>
         </div>
@@ -45,7 +45,7 @@
                 hreflang="fr" title="Voir les mentions l&eacute;gales" class="link"><abbr
                     title="R&egrave;glement G&eacute;n&eacute;ral sur la Protection des Donn&eacute;es" class="bold">RGPD</abbr></a>
         </li>
-        <li class="footer_list_item">Cr&eacute; par <a class="link" href="https://portfolio.marvinpagnoul.be"
+        <li class="footer_list_item">Cr&eacute;&eacute; par <a class="link" href="https://portfolio.marvinpagnoul.be"
                                                        title="Voir le portfolio de Marvin Pagnoul" hreflang="fr">Marvin
                 Pagnoul</a> et <a class="link" href="https://www.homtimiste.com/" hreflang="fr"
                                   title="Voir le portfolio de Maxime Pagnoul">Maxime Pagnoul</a></li>

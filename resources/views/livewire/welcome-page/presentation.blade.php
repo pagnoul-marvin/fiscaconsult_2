@@ -17,7 +17,7 @@
     </div>
 
     <div class="img_container">
-        <img class="img_container_img" src="{{asset('assets/images/optimized/office_3.jpeg')}}" alt="Photo montrant Olivier dans son bureau" width="450"
-             height="600">
+        <img class="img_container_img" src="{{asset('assets/images/optimized/office_3.webp')}}" alt="Photo montrant Olivier dans son bureau" width="800"
+             height="1067">
     </div>
 </section>
