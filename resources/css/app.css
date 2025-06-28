@@ -416,7 +416,17 @@ table {
 }
 .inter_nav_list_item {
   position: relative;
-  height: 350px;
+  height: 500px;
+}
+.inter_nav_list_item .img_container {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+.inter_nav_list_item .img_container_img {
+  -webkit-transform: scale(2.8);
+  -ms-transform: scale(2.8);
+  transform: scale(2.8);
 }
 .inter_nav_list_item_link {
   display: -webkit-box;
@@ -736,6 +746,23 @@ table {
 }
 .entrepreneur .primary_title {
   font-size: 1.875em;
+}
+.entrepreneur .primary_title_underline {
+  position: relative;
+}
+.entrepreneur .primary_title_underline:first-of-type .primary_title_underline_svg {
+  left: -10px;
+  top: -4px;
+}
+.entrepreneur .primary_title_underline_svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: 0;
+  stroke: none;
+}
+.entrepreneur .primary_title_underline_svg path {
+  stroke: none;
 }
 
 .expertise {
