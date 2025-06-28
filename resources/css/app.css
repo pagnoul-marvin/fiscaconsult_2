@@ -114,7 +114,7 @@ table {
 .primary_btn, .secondary_btn, .link {
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   text-decoration: none;
   display: inline-block;
 }
@@ -128,7 +128,7 @@ table {
 .link::after {
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   content: "";
   position: absolute;
   width: 0;
@@ -923,7 +923,7 @@ table {
   flex-wrap: wrap;
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -964,7 +964,7 @@ table {
   .main_nav .burger_menu_label::before, .main_nav .burger_menu_label::after {
     -webkit-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     content: "";
     position: absolute;
     background-color: #000000;
@@ -1002,7 +1002,7 @@ table {
   .main_nav_list {
     -webkit-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     position: fixed;
     top: -10000px;
     -webkit-box-orient: vertical;
