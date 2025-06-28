@@ -19,7 +19,7 @@
 @mixin transition {
     -webkit-transition: .3s ease-in-out;
     -o-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 @mixin hover {
