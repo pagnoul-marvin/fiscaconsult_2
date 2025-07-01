@@ -10,7 +10,7 @@
         </div>
         <div class="team_mate_container" itemscope itemtype="https://schema.org/Person">
             <h3 class="team_mate_container_name bold" itemprop="name">Nathalie Brugmans</h3>
-            <p class="team_mate_container_job" itemprop="jobTitle">Experte-Comptable fiscaliste</p>
+            <p class="team_mate_container_job" itemprop="jobTitle">Expert-Comptable fiscaliste</p>
             <p class="team_mate_container_itaa"><abbr title="Institute for Tax Advisors and Accountants" lang="en"
                                                       class="abbr">ITAA</abbr> 10.142.358</p>
             <a class="team_mate_container_link link" href="tel:+32478440913" title="Téléphoner" itemprop="telephone">+32
