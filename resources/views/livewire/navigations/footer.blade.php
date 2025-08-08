@@ -45,7 +45,7 @@
                 hreflang="fr" title="Voir les mentions l&eacute;gales" class="link"><abbr
                     title="R&egrave;glement G&eacute;n&eacute;ral sur la Protection des Donn&eacute;es" class="bold">RGPD</abbr></a>
         </li>
-        <li class="footer_list_item">Cr&eacute;&eacute; par <a class="link" href="https://portfolio.marvinpagnoul.be"
+        <li class="footer_list_item">Cr&eacute;&eacute; par <a class="link" href="https://marvinpagnoul.be"
                                                        title="Voir le portfolio de Marvin Pagnoul" hreflang="fr">Marvin
                 Pagnoul</a> et <a class="link" href="https://www.homtimiste.com/" hreflang="fr"
                                   title="Voir le portfolio de Maxime Pagnoul">Maxime Pagnoul</a></li>

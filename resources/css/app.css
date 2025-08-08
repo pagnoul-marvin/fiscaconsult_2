@@ -114,6 +114,8 @@ table {
 .primary_btn, .secondary_btn, .link {
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
   display: inline-block;
@@ -128,6 +130,8 @@ table {
 .link::after {
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   content: "";
   position: absolute;
@@ -583,6 +587,9 @@ table {
   align-items: center;
   justify-items: center;
 }
+.office_list:last-of-type .small {
+  font-size: 0.625em;
+}
 .office_list_item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -603,7 +610,6 @@ table {
 }
 .office_list_item_text {
   line-height: 24px;
-  font-size: 0.8125em;
 }
 
 .mission {
@@ -818,7 +824,6 @@ table {
 }
 .expertise_content .content_container .expertise_content_text_container_list {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.875em;
 }
 .expertise_content_img_link {
   display: -webkit-box;
@@ -950,6 +955,8 @@ table {
   flex-wrap: wrap;
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -968,6 +975,11 @@ table {
   transform: scale(1.05);
 }
 
+@media (width <= 1080px) {
+  .primary_title_underline_svg {
+    visibility: hidden;
+  }
+}
 @media (width <= 962px) {
   .footer_nav_logo {
     width: 100%;
@@ -991,6 +1003,8 @@ table {
   .main_nav .burger_menu_label::before, .main_nav .burger_menu_label::after {
     -webkit-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     content: "";
     position: absolute;
@@ -1029,6 +1043,8 @@ table {
   .main_nav_list {
     -webkit-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     position: fixed;
     top: -10000px;
@@ -1125,6 +1141,7 @@ table {
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
+    gap: 0.9375em;
   }
   .mission_content_first_texts_containers {
     -webkit-box-orient: vertical;
@@ -1137,6 +1154,15 @@ table {
     text-align: center;
   }
   .mission_content_last_text {
+    text-align: center;
+  }
+}
+@media (width <= 651px) {
+  .footer_nav_container {
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     text-align: center;
   }
 }
@@ -1174,6 +1200,9 @@ table {
   }
   .inter_title, .entrepreneur {
     padding: 1.5em;
+  }
+  .expertise {
+    padding: 4.875em 3em;
   }
 }
 @media (width <= 445px) {

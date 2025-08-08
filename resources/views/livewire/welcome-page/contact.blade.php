@@ -18,7 +18,7 @@
                     <h3 class="bold" itemprop="name">Nathalie Brugmans</h3>
                     <p itemprop="jobTitle">Expert-comptable fiscaliste</p>
                     <p><abbr title="Institute for Tax Advisors and Accountants" lang="en" class="abbr">ITAA</abbr> 10.142.358</p>
-                    <a class="contact_content_contact_texts_nath_link link" href="tel:+32478440913" title="T&eacute;l&eacute;phoner" itemprop="telephone">+32478440913</a>
+                    <a class="contact_content_contact_texts_nath_link link" href="tel:+32478440913" title="T&eacute;l&eacute;phoner" itemprop="telephone">+32 (0) 478.44.09.13</a>
                     <a class="contact_content_contact_texts_nath_link link" href="mailto:nathalie.brugmans@fiscaconsult.com" title="Envoyer un mail" itemprop="email">nathalie.brugmans@fiscaconsult.com</a>
                 </div>
             </div>

@@ -19,6 +19,8 @@
 @mixin transition {
     -webkit-transition: .3s ease-in-out;
     -o-transition: .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 
@@ -507,6 +509,10 @@
             -ms-flex-align: center;
             align-items: center;
             justify-items: center;
+
+            .small {
+                font-size: $small;
+            }
         }
 
         &_item {
@@ -526,7 +532,6 @@
 
             &_text {
                 line-height: 24px;
-                font-size: $small_medium;
             }
         }
     }
@@ -735,7 +740,6 @@
 
                     &_list {
                         font-family: 'Montserrat', sans-serif;
-                        font-size: $small_medium_plus;
                     }
                 }
             }

@@ -46,7 +46,7 @@
     <ul class="office_list">
         <li>&nbsp;</li>
         <li><a href="#contact" class="primary_btn" title="Contactez-nous">Contactez-nous</a></li>
-        <li><abbr title="Banque-Carrefour des Entreprises" lang="fr" class="abbr">BCE</abbr>&nbsp;:&nbsp;BE0811.531.494&nbsp;&#124;&nbsp;<abbr
+        <li class="small"><abbr title="Banque-Carrefour des Entreprises" lang="fr" class="abbr">BCE</abbr>&nbsp;:&nbsp;BE0811.531.494&nbsp;&#124;&nbsp;<abbr
                 title="Institute for Tax Advisors and Accountants" class="abbr" lang="en">ITAA</abbr> 50.433.936</li>
     </ul>
 </section>
