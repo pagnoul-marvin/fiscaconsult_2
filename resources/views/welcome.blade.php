@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="FiscaConsult, fiscaconsult">
-        <meta name="description" content="Le site de FiscaConsult">
+        <meta name="description" content="Comptable &agrave; Crisn&eacute;e &vert; FiscaConsult">
         <meta name="keywords"
-              content="fiscaconsult, Fisca Consult, FiscaConsult, olivier, pagnoul, Olivier, Pagnoul, Olivier Pagnoul">
+              content="fiscaconsult, Fisca Consult, FiscaConsult, olivier, pagnoul, Olivier, Pagnoul, Olivier Pagnoul, comptable, bureau de comptable, liège, crisnée, belgique">
 
-        <title>{{config('app.name')}}</title>
+        <title>FiscaConsult &ndash; Comptable &agrave; Li&egrave;ge & Crisn&eacute;e &verbar; Olivier Pagnoul</title>
 
         <link rel="icon" href="/favicon.ico" sizes="any">
         <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -18,7 +18,7 @@
     </head>
 
     <body id="top" class="body" itemscope itemtype="https://schema.org/AccountingService">
-        <h1 class="hidden">{{config('app.name')}}</h1>
+        <h1 class="hidden">FiscaConsult &ndash; Comptable &agrave; Li&egrave;ge & Crisn&eacute;e &verbar; Olivier Pagnoul</h1>
 
         <header>
             <livewire:navigations.main/>
