@@ -14,11 +14,38 @@
         <link rel="icon" href="/favicon.svg" type="image/svg+xml">
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "AccountingService",
+              "name": "FiscaConsult",
+              "url": "https://fiscaconsult.com",
+              "telephone": "+32 476 26 26 39",
+              "email": "olivier.pagnoul@fiscaconsult.com",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Grand'Route 18A",
+                "postalCode": "4367",
+                "addressLocality": "Crisnée",
+                "addressRegion": "Liège",
+                "addressCountry": "BE",
+              },
+              "founder": {
+                "@type": "Person",
+                "name": "Olivier Pagnoul",
+              },
+              "areaServed": {
+                "@type": "Place",
+                "name": "Liège, Crisnée, Belgique",
+              }
+            }
+        </script>
+
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
 
     <body id="top" class="body" itemscope itemtype="https://schema.org/AccountingService">
-        <h1 class="hidden">FiscaConsult &ndash; Comptable &agrave; Li&egrave;ge & Crisn&eacute;e &verbar; Olivier Pagnoul</h1>
+        <h1 class="hidden"><span itemprop="name">FiscaConsult</span> &ndash; Comptable &agrave; Li&egrave;ge & Crisn&eacute;e &verbar; Olivier Pagnoul</h1>
 
         <header>
             <livewire:navigations.main/>

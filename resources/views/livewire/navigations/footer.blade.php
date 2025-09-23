@@ -41,8 +41,8 @@
 
     <ul class="footer_list">
         <li class="footer_list_item"><a
-                href="https://fiscaconsult.sharepoint.com/sites/ShareDrive/Gedeelde%20documenten/Forms/AllItems.aspx?id=%2Fsites%2FShareDrive%2FGedeelde%20documenten%2FITAA%20%2D%20LAB%20et%20org%2FFisca%20Consult%2FFisca%20Consult%20%2D%2020241013%20%2D%20D%C3%A9claration%20de%20protection%20de%20la%20vie%20priv%C3%A9e%2Epdf&parent=%2Fsites%2FShareDrive%2FGedeelde%20documenten%2FITAA%20%2D%20LAB%20et%20org%2FFisca%20Consult&p=true&ga=1"
-                hreflang="fr" title="Voir les mentions l&eacute;gales" class="link"><abbr
+                href="{{asset('assets/docs/rgpd.pdf')}}"
+                hreflang="fr" target="_blank" rel="noopener noreferrer" title="Voir les mentions l&eacute;gales" class="link"><abbr
                     title="R&egrave;glement G&eacute;n&eacute;ral sur la Protection des Donn&eacute;es" class="bold">RGPD</abbr></a>
         </li>
         <li class="footer_list_item">Cr&eacute;&eacute; par <a class="link" href="https://marvinpagnoul.be"

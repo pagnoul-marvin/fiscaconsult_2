@@ -12,7 +12,6 @@
                 class="abbr" title="Institute for Tax Advisors and Accountants" lang="en">ITAA</abbr> 50.433.936</small>
         <div class="presentation_text_btn">
             <a href="#expertise" class="primary_btn">D&eacute;couvrez-nous</a>
-            <a href="#" class="secondary_btn">Espace client</a>
         </div>
     </div>
 
