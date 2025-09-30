@@ -21,22 +21,22 @@
               "name": "FiscaConsult",
               "url": "https://fiscaconsult.com",
               "telephone": "+32 476 26 26 39",
-              "email": "olivier.pagnoul@fiscaconsult.com",
+              "email": "mailto:olivier.pagnoul@fiscaconsult.com",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Grand'Route 18A",
                 "postalCode": "4367",
                 "addressLocality": "Crisnée",
                 "addressRegion": "Liège",
-                "addressCountry": "BE",
+                "addressCountry": "BE"
               },
               "founder": {
                 "@type": "Person",
-                "name": "Olivier Pagnoul",
+                "name": "Olivier Pagnoul"
               },
               "areaServed": {
                 "@type": "Place",
-                "name": "Liège, Crisnée, Belgique",
+                "name": "Liège, Crisnée, Belgique"
               }
             }
         </script>
