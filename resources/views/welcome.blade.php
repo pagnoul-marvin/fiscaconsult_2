@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="FiscaConsult, fiscaconsult">
-        <meta name="description" content="Comptable &agrave; Crisn&eacute;e &vert; FiscaConsult">
+        <meta name="description" content="Comptable &agrave; Crisn&eacute;e et Herve &vert; FiscaConsult">
         <meta name="keywords"
-              content="fiscaconsult, Fisca Consult, FiscaConsult, olivier, pagnoul, Olivier, Pagnoul, Olivier Pagnoul, comptable, bureau de comptable, liège, crisnée, belgique">
+              content="fiscaconsult, Fisca Consult, FiscaConsult, olivier, pagnoul, Olivier, Pagnoul, Olivier Pagnoul, comptable, bureau de comptable, liège, crisnée, belgique, Herve, herve, verviers, Verviers">
 
-        <title>FiscaConsult &ndash; Comptable &agrave; Li&egrave;ge & Crisn&eacute;e &verbar; Olivier Pagnoul</title>
+        <title>FiscaConsult &ndash; Comptable &agrave; Li&egrave;ge, Crisn&eacute;e & Herve &verbar; Olivier Pagnoul</title>
 
         <link rel="icon" href="/favicon.ico" sizes="any">
         <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -24,9 +24,9 @@
               "email": "mailto:olivier.pagnoul@fiscaconsult.com",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Grand'Route 18A",
-                "postalCode": "4367",
-                "addressLocality": "Crisnée",
+                "streetAddress": "Rue Ann-Sophie Charlier, 29/7",
+                "postalCode": "4650",
+                "addressLocality": "Herve",
                 "addressRegion": "Liège",
                 "addressCountry": "BE"
               },
@@ -36,7 +36,7 @@
               },
               "areaServed": {
                 "@type": "Place",
-                "name": "Liège, Crisnée, Belgique"
+                "name": "Liège, Crisnée, Herve, Belgique"
               }
             }
         </script>
@@ -45,7 +45,7 @@
     </head>
 
     <body id="top" class="body" itemscope itemtype="https://schema.org/AccountingService">
-        <h1 class="hidden"><span itemprop="name">FiscaConsult</span> &ndash; Comptable &agrave; Li&egrave;ge & Crisn&eacute;e &verbar; Olivier Pagnoul</h1>
+        <h1 class="hidden"><span itemprop="name">FiscaConsult</span> &ndash; Comptable &agrave; Li&egrave;ge, Crisn&eacute;e & Herve &verbar; Olivier Pagnoul</h1>
 
         <header>
             <livewire:navigations.main/>

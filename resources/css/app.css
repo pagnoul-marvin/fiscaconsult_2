@@ -62,20 +62,6 @@ table {
   font-style: normal;
   font-display: swap;
 }
-@font-face {
-  font-family: "Ramillas";
-  src: url("../../public/assets/fonts/ramillas/TT Ramillas Trial Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Ramillas";
-  src: url("../../public/assets/fonts/ramillas/TT Ramillas Trial Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
 .transition {
   opacity: 0;
   -webkit-transition: opacity 1.2s ease-out;
@@ -106,7 +92,7 @@ table {
 }
 
 .primary_title, .primary_btn {
-  font-family: "Ramillas", serif;
+  font-family: "Montserrat", serif;
   font-style: normal;
   font-weight: normal;
 }
@@ -445,7 +431,7 @@ table {
   -ms-flex-pack: center;
   justify-content: center;
   color: #FFFFFF;
-  font-family: "Ramillas", serif;
+  font-family: "Montserrat", serif;
   text-decoration: none;
   position: absolute;
   top: 0;
@@ -815,12 +801,12 @@ table {
 .expertise_content .content_container .expertise_content_text_container_number {
   color: #af9273;
   font-size: 41px;
-  font-family: "Ramillas", serif;
+  font-family: "Montserrat", serif;
 }
 .expertise_content .content_container .expertise_content_text_container_title {
   font-size: 1.25em;
   margin-bottom: 0.5em;
-  font-family: "Ramillas", serif;
+  font-family: "Montserrat", serif;
 }
 .expertise_content .content_container .expertise_content_text_container_list {
   font-family: "Montserrat", sans-serif;

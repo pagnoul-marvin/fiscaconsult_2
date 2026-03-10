@@ -2,7 +2,7 @@
     <div class="presentation_text">
         <h2 class="primary_title presentation_text_title">Bienvenue chez &laquo;<span
                 itemprop="name">FISCA CONSULT</span>&raquo;, le bureau d&apos;Experts-comptables
-            fiscalistes bas&eacute; &agrave; Crisn&eacute;e.</h2>
+            fiscalistes bas&eacute; &agrave; Crisn&eacute;e et &agrave; Herve.</h2>
         <p class="presentation_text_paragraph">Services aux ind&eacute;pendants, aux <abbr
                 title="Petites et moyennes entreprises" class="abbr" lang="fr">PME</abbr>, aux professions m&eacute;dicales
             et param&eacute;dicales, aux

@@ -29,6 +29,9 @@
 
             <div class="contact_content_localisation_texts" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
                 <h3 class="bold">FISCA CONSULT <abbr class="abbr" title="Société à Responsabilité Limitée" lang="fr">SRL</abbr></h3>
+                <p itemprop="streetAddress">Rue Ann-Sophie Charlier, 29/7</p>
+                <p><span itemprop="postalCode">4650</span> <span itemprop="addressLocality">Herve</span></p>
+                <span>●</span>
                 <p itemprop="streetAddress">Grand&apos;Route 18A</p>
                 <p>(Centre d&apos;Affaires CLEBC)</p>
                 <p><span itemprop="postalCode">4367</span> <span itemprop="addressLocality">Crisn&eacute;e</span></p>
@@ -40,8 +43,8 @@
 
     <ul class="contact_list">
         <li class="contact_list_item">
-            <a href="https://www.google.com/maps/place/Cle+Buisness+Center/@50.701033,5.417813,17z/data=!3m1!4b1!4m6!3m5!1s0x47c0fdee23828aff:0xb1975efc73ea6166!8m2!3d50.701033!4d5.4203879!16s%2Fg%2F11tff59m38?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D"
-               title="Voir sur Google Maps" hreflang="fr">
+            <a href="https://www.google.com/maps/place/Rue+Ann-Sophie+Charlier+29,+4651+Herve/@50.6359711,5.7898318,17z/data=!3m1!4b1!4m5!3m4!1s0x47c08cb426c14471:0x41d55042cf243e6d!8m2!3d50.6359711!4d5.7924067?entry=ttu&g_ep=EgoyMDI2MDMwOC4wIKXMDSoASAFQAw%3D%3D"
+               title="Voir sur Google Maps" hreflang="fr" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
                     <path
                         d="M12 0c-3.148 0-6 2.553-6 5.702 0 4.682 4.783 5.177 6 12.298 1.217-7.121 6-7.616 6-12.298 0-3.149-2.851-5.702-6-5.702zm0 8c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2zm12 16l-6.707-2.427-5.293 2.427-5.581-2.427-6.419 2.427 4-9 3.96-1.584c.38.516.741 1.08 1.061 1.729l-3.523 1.41-1.725 3.88 2.672-1.01 1.506-2.687-.635 3.044 4.189 1.789.495-2.021.465 2.024 4.15-1.89-.618-3.033 1.572 2.896 2.732.989-1.739-3.978-3.581-1.415c.319-.65.681-1.215 1.062-1.731l4.021 1.588 3.936 9z"/>

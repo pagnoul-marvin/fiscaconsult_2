@@ -47,7 +47,7 @@
 }
 
 .primary_title, .primary_btn {
-    font-family: 'Ramillas', serif;
+    font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: normal;
 }
@@ -364,7 +364,7 @@
                     -ms-flex-pack: center;
                     justify-content: center;
                     color: $white;
-                    font-family: 'Ramillas', serif;
+                    font-family: 'Montserrat', serif;
                     text-decoration: none;
                     position: absolute;
                     top: 0;
@@ -729,13 +729,13 @@
                     &_number {
                         color: $medium_beige;
                         font-size: 41px;
-                        font-family: 'Ramillas', serif;
+                        font-family: 'Montserrat', serif;
                     }
 
                     &_title {
                         font-size: $big;
                         margin-bottom: .5em;
-                        font-family: 'Ramillas', serif;
+                        font-family: 'Montserrat', serif;
                     }
 
                     &_list {
