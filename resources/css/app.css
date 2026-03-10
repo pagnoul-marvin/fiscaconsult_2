@@ -62,20 +62,6 @@ table {
   font-style: normal;
   font-display: swap;
 }
-@font-face {
-  font-family: "Ramillas";
-  src: url("../../public/assets/fonts/ramillas/TT Ramillas Trial Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Ramillas";
-  src: url("../../public/assets/fonts/ramillas/TT Ramillas Trial Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
 .transition {
   opacity: 0;
   -webkit-transition: opacity 1.2s ease-out;
@@ -106,7 +92,7 @@ table {
 }
 
 .primary_title, .primary_btn {
-  font-family: "Ramillas", serif;
+  font-family: "Montserrat", serif;
   font-style: normal;
   font-weight: normal;
 }
@@ -114,6 +100,8 @@ table {
 .primary_btn, .secondary_btn, .link {
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
   display: inline-block;
@@ -128,6 +116,8 @@ table {
 .link::after {
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   content: "";
   position: absolute;
@@ -416,7 +406,17 @@ table {
 }
 .inter_nav_list_item {
   position: relative;
-  height: 350px;
+  height: 500px;
+}
+.inter_nav_list_item .img_container {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+.inter_nav_list_item .img_container_img {
+  -webkit-transform: scale(2.8);
+  -ms-transform: scale(2.8);
+  transform: scale(2.8);
 }
 .inter_nav_list_item_link {
   display: -webkit-box;
@@ -431,7 +431,7 @@ table {
   -ms-flex-pack: center;
   justify-content: center;
   color: #FFFFFF;
-  font-family: "Ramillas", serif;
+  font-family: "Montserrat", serif;
   text-decoration: none;
   position: absolute;
   top: 0;
@@ -573,6 +573,9 @@ table {
   align-items: center;
   justify-items: center;
 }
+.office_list:last-of-type .small {
+  font-size: 0.625em;
+}
 .office_list_item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -593,7 +596,6 @@ table {
 }
 .office_list_item_text {
   line-height: 24px;
-  font-size: 0.8125em;
 }
 
 .mission {
@@ -737,6 +739,23 @@ table {
 .entrepreneur .primary_title {
   font-size: 1.875em;
 }
+.entrepreneur .primary_title_underline {
+  position: relative;
+}
+.entrepreneur .primary_title_underline:first-of-type .primary_title_underline_svg {
+  left: -10px;
+  top: -4px;
+}
+.entrepreneur .primary_title_underline_svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: 0;
+  stroke: none;
+}
+.entrepreneur .primary_title_underline_svg path {
+  stroke: none;
+}
 
 .expertise {
   background-color: #f8eedd;
@@ -782,16 +801,15 @@ table {
 .expertise_content .content_container .expertise_content_text_container_number {
   color: #af9273;
   font-size: 41px;
-  font-family: "Ramillas", serif;
+  font-family: "Montserrat", serif;
 }
 .expertise_content .content_container .expertise_content_text_container_title {
   font-size: 1.25em;
   margin-bottom: 0.5em;
-  font-family: "Ramillas", serif;
+  font-family: "Montserrat", serif;
 }
 .expertise_content .content_container .expertise_content_text_container_list {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.875em;
 }
 .expertise_content_img_link {
   display: -webkit-box;
@@ -923,6 +941,8 @@ table {
   flex-wrap: wrap;
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -941,6 +961,11 @@ table {
   transform: scale(1.05);
 }
 
+@media (width <= 1080px) {
+  .primary_title_underline_svg {
+    visibility: hidden;
+  }
+}
 @media (width <= 962px) {
   .footer_nav_logo {
     width: 100%;
@@ -964,6 +989,8 @@ table {
   .main_nav .burger_menu_label::before, .main_nav .burger_menu_label::after {
     -webkit-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     content: "";
     position: absolute;
@@ -1002,6 +1029,8 @@ table {
   .main_nav_list {
     -webkit-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     position: fixed;
     top: -10000px;
@@ -1098,6 +1127,7 @@ table {
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
+    gap: 0.9375em;
   }
   .mission_content_first_texts_containers {
     -webkit-box-orient: vertical;
@@ -1110,6 +1140,15 @@ table {
     text-align: center;
   }
   .mission_content_last_text {
+    text-align: center;
+  }
+}
+@media (width <= 651px) {
+  .footer_nav_container {
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     text-align: center;
   }
 }
@@ -1147,6 +1186,9 @@ table {
   }
   .inter_title, .entrepreneur {
     padding: 1.5em;
+  }
+  .expertise {
+    padding: 4.875em 3em;
   }
 }
 @media (width <= 445px) {

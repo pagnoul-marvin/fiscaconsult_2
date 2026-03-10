@@ -26,7 +26,7 @@ class OptimizeImages extends Command
 
         foreach ($files as $file) {
             $extension = strtolower($file->getExtension());
-            if (!in_array($extension, ['jpg', 'jpeg'])) {
+            if (!in_array($extension, ['png', 'jpeg', 'jpg'])) {
                 continue;
             }
 
@@ -35,7 +35,7 @@ class OptimizeImages extends Command
 
             if (str_contains($filename, 'ITAA_logo')) {
                 $targetWidth = 300;
-            } elseif (str_contains($filename, 'nathalie') || str_contains($filename, 'olivier')) {
+            } elseif (str_contains($filename, 'nathalie') || str_contains($filename, 'olivier') || str_contains($filename, 'expertise') || str_contains($filename, 'office.png') || str_contains($filename, 'mission') || str_contains($filename, 'team')) {
                 $targetWidth = 500;
             } elseif (str_contains($filename, 'office_4')) {
                 $targetWidth = 700;

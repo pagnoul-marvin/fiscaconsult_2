@@ -1,3 +1,9 @@
+@media (width <= 1080px) {
+    .primary_title_underline_svg {
+        visibility: hidden;
+    }
+}
+
 @media (width <= 962px) {
     .footer {
         &_nav {
@@ -204,6 +210,7 @@
             -webkit-box-align: stretch;
             -ms-flex-align: stretch;
             align-items: stretch;
+            gap: $small_large;
         }
 
         &_content {
@@ -221,6 +228,18 @@
             &_last_text {
                 text-align: center;
             }
+        }
+    }
+}
+
+@media (width <= 651px) {
+    .footer {
+        &_nav_container {
+            width: 100%;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            text-align: center;
         }
     }
 }
@@ -268,6 +287,10 @@
 
     .inter_title, .entrepreneur {
         padding: 1.5em;
+    }
+
+    .expertise {
+        padding: 4.875em 3em;
     }
 }
 

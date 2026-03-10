@@ -4,21 +4,48 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="FiscaConsult, fiscaconsult">
-        <meta name="description" content="Le site de FiscaConsult">
+        <meta name="description" content="Comptable &agrave; Crisn&eacute;e et Herve &vert; FiscaConsult">
         <meta name="keywords"
-              content="fiscaconsult, Fisca Consult, FiscaConsult, olivier, pagnoul, Olivier, Pagnoul, Olivier Pagnoul">
+              content="fiscaconsult, Fisca Consult, FiscaConsult, olivier, pagnoul, Olivier, Pagnoul, Olivier Pagnoul, comptable, bureau de comptable, liège, crisnée, belgique, Herve, herve, verviers, Verviers">
 
-        <title>{{config('app.name')}}</title>
+        <title>FiscaConsult &ndash; Comptable &agrave; Li&egrave;ge, Crisn&eacute;e & Herve &verbar; Olivier Pagnoul</title>
 
         <link rel="icon" href="/favicon.ico" sizes="any">
         <link rel="icon" href="/favicon.svg" type="image/svg+xml">
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "AccountingService",
+              "name": "FiscaConsult",
+              "url": "https://fiscaconsult.com",
+              "telephone": "+32 476 26 26 39",
+              "email": "mailto:olivier.pagnoul@fiscaconsult.com",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Rue Ann-Sophie Charlier, 29/7",
+                "postalCode": "4650",
+                "addressLocality": "Herve",
+                "addressRegion": "Liège",
+                "addressCountry": "BE"
+              },
+              "founder": {
+                "@type": "Person",
+                "name": "Olivier Pagnoul"
+              },
+              "areaServed": {
+                "@type": "Place",
+                "name": "Liège, Crisnée, Herve, Belgique"
+              }
+            }
+        </script>
+
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
 
     <body id="top" class="body" itemscope itemtype="https://schema.org/AccountingService">
-        <h1 class="hidden">{{config('app.name')}}</h1>
+        <h1 class="hidden"><span itemprop="name">FiscaConsult</span> &ndash; Comptable &agrave; Li&egrave;ge, Crisn&eacute;e & Herve &verbar; Olivier Pagnoul</h1>
 
         <header>
             <livewire:navigations.main/>
