@@ -32,7 +32,9 @@
     </svg>
 
     <input type="checkbox" id="burger_menu" class="hidden burger_menu_input" x-ref="burgerCheckbox">
-    <label for="burger_menu" class="burger_menu_label">&nbsp;</label>
+    <label for="burger_menu" class="burger_menu_label">
+        <span class="hidden">Ouvrir le menu de navigation</span>
+    </label>
 
     <ul class="main_nav_list">
         <li class="main_nav_list_item"><a @click="$refs.burgerCheckbox.checked = false" class="main_nav_list_item_link link bold" href="#contact" title="Aller vers la section contact">Contact</a></li>

@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="FiscaConsult, fiscaconsult">
-        <meta name="description" content="Comptable &agrave; Crisn&eacute;e et Herve &vert; FiscaConsult">
+        <meta name="author" content="FiscaConsult, fiscaconsult, Fisca Consult">
+        <meta name="description" content="FiscaConsult – Expert-comptable fiscaliste à Crisnée et Herve. Olivier Pagnoul et Nathalie Brugmans accompagnent indépendants, PME et professions libérales depuis 1989.">
         <meta name="keywords"
               content="fiscaconsult, Fisca Consult, FiscaConsult, olivier, pagnoul, Olivier, Pagnoul, Olivier Pagnoul, comptable, bureau de comptable, liège, crisnée, belgique, Herve, herve, verviers, Verviers">
 
@@ -14,6 +14,12 @@
         <link rel="icon" href="/favicon.svg" type="image/svg+xml">
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
+        <meta property="og:title" content="FiscaConsult – Expert-comptable à Crisnée & Herve">
+        <meta property="og:description" content="Olivier Pagnoul et Nathalie Brugmans, experts-comptables fiscalistes depuis 1989. Service personnalisé, 100% digitalisé.">
+        <meta property="og:url" content="https://fiscaconsult.com">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="fr_BE">
+
         <script type="application/ld+json">
             {
               "@context": "https://schema.org",
@@ -21,7 +27,13 @@
               "name": "FiscaConsult",
               "url": "https://fiscaconsult.com",
               "telephone": "+32 476 26 26 39",
-              "email": "mailto:olivier.pagnoul@fiscaconsult.com",
+              "email": "olivier.pagnoul@fiscaconsult.com",
+              "description": "Expert-comptable fiscaliste à Crisnée et Herve. Services aux indépendants, PME, professions médicales et libérales depuis 1989.",
+              "foundingDate": "1989",
+              "openingHours": "Mo-Fr 08:00-17:00",
+              "sameAs": [
+                  "https://www.linkedin.com/in/olivier-pagnoul-84a6a2128/"
+              ],
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Rue Ann-Sophie Charlier, 29/7",

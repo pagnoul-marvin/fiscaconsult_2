@@ -40,7 +40,7 @@ class OptimizeImages extends Command
             } elseif (str_contains($filename, 'office_4')) {
                 $targetWidth = 700;
             } elseif (str_contains($filename, 'oli_nath_office') || str_contains($filename, 'office_3')) {
-                $targetWidth = 800;
+                $targetWidth = 525;
             }
 
             $img->scale(width: $targetWidth);

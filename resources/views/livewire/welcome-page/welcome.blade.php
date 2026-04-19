@@ -1,4 +1,4 @@
-<div>
+<main>
     <livewire:welcome-page.presentation/>
     <livewire:welcome-page.inter/>
     <livewire:welcome-page.team/>
@@ -7,4 +7,4 @@
     <livewire:welcome-page.entrepreneur/>
     <livewire:welcome-page.expertise/>
     <livewire:welcome-page.contact/>
-</div>
+</main>
