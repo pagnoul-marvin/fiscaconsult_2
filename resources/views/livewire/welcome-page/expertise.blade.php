@@ -98,10 +98,9 @@
 
         <div class="expertise_content_img_link">
             <div class="img_container">
-                <img loading="lazy" src="{{asset('assets/images/optimized/office_4.webp')}}" alt="Photo d'Olivier dans son bureau"
-                     width="700" height="933" class="img_container_img">
+                <x-responsive-image name="office_4" alt="Photo d'Olivier dans son bureau" :width="700" :height="933" :widths="[400, 700]" sizes="(max-width: 768px) 100vw, 40vw"/>
             </div>
-            <a href="#contact" title="Parlez-nous de vous" class="primary_btn">Parlez-nous de vous</a>
+            <a href="{{ route('contact') }}" title="Parlez-nous de vous" class="primary_btn">Parlez-nous de vous</a>
         </div>
     </div>
 </section>

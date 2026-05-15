@@ -211,6 +211,10 @@ table {
   padding-bottom: 1.25em;
   border-bottom: 2px solid #000000;
 }
+.main_nav_logo_link {
+  display: inline-block;
+  line-height: 0;
+}
 .main_nav .burger_menu_input, .main_nav .burger_menu_label {
   display: none;
 }
@@ -977,6 +981,96 @@ table {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
+}
+
+.nav_active {
+  font-weight: bold;
+}
+
+.page_heading {
+  font-family: "Ramillas", serif;
+  font-size: 2.125em;
+  text-align: center;
+  padding: 2em 3.5em 1em;
+  color: #382e22;
+}
+
+.page_cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 1.5em;
+  padding: 3em 3.5em 4em;
+  background-color: #eeeae3;
+}
+.page_cta_text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875em;
+  text-align: center;
+  max-width: 40em;
+}
+.page_cta_btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 1em;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.page_seo {
+  padding: 2.5em 3.5em;
+  background-color: #f6f4f1;
+}
+.page_seo_title {
+  font-size: 1.875em;
+  color: #7f7265;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.page_seo_content {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875em;
+  line-height: 1.6;
+  max-width: 52em;
+  margin: 0 auto;
+}
+.page_seo_content p + p {
+  margin-top: 1em;
+}
+
+.page_legal {
+  padding: 0 3.5em 4em;
+  max-width: 48em;
+  margin: 0 auto;
+}
+.page_legal_section {
+  margin-top: 2.5em;
+}
+.page_legal_title {
+  font-size: 1.25em;
+  color: #7f7265;
+  margin-bottom: 0.75em;
+}
+.page_legal_content {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875em;
+  line-height: 1.6;
+}
+.page_legal_content p + p {
+  margin-top: 0.75em;
 }
 
 @media (width <= 1080px) {

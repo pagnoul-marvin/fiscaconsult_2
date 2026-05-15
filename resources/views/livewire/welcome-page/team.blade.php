@@ -5,8 +5,7 @@
 
     <div class="team_mate">
         <div class="img_container">
-            <img loading="lazy" class="team_mate_img img_container_img" src="{{asset('assets/images/optimized/nathalie.webp')}}" alt="Photo de Nathalie"
-                 width="500" height="889">
+            <x-responsive-image name="nathalie" alt="Photo de Nathalie" :width="500" :height="889" class="team_mate_img img_container_img" :widths="[400, 500]" sizes="(max-width: 768px) 100vw, 50vw"/>
         </div>
         <div class="team_mate_container" itemscope itemtype="https://schema.org/Person">
             <h3 class="team_mate_container_name bold" itemprop="name">Nathalie Brugmans</h3>
@@ -22,8 +21,7 @@
 
     <div class="team_mate">
         <div class="img_container">
-            <img loading="lazy" class="team_mate_img img_container_img" src="{{asset('assets/images/optimized/olivier.webp')}}" alt="Photo d'Olivier"
-                 width="500" height="889">
+            <x-responsive-image name="olivier" alt="Photo d'Olivier" :width="500" :height="889" class="team_mate_img img_container_img" :widths="[400, 500]" sizes="(max-width: 768px) 100vw, 50vw"/>
         </div>
         <div class="team_mate_container" itemscope itemtype="https://schema.org/Person">
             <h3 class="team_mate_container_name bold" itemprop="name">Olivier Pagnoul</h3>

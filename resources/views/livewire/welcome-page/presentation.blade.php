@@ -11,12 +11,18 @@
                                                      class="abbr">BCE</abbr>&nbsp;:&nbsp;BE0811.531.494&nbsp;&#124;&nbsp;<abbr
                 class="abbr" title="Institute for Tax Advisors and Accountants" lang="en">ITAA</abbr> 50.433.936</small>
         <div class="presentation_text_btn">
-            <a href="#expertise" class="primary_btn">D&eacute;couvrez-nous</a>
+            <a href="{{ route('about') }}" class="primary_btn">D&eacute;couvrez-nous</a>
         </div>
     </div>
 
     <div class="img_container">
-        <img class="img_container_img" src="{{asset('assets/images/optimized/office_3.webp')}}" alt="Photo montrant Olivier dans son bureau" width="800"
-             height="1067">
+        <x-responsive-image
+            name="office_3"
+            alt="Photo montrant Olivier dans son bureau"
+            :width="800"
+            :height="1067"
+            eager
+            sizes="(max-width: 768px) 100vw, 50vw"
+        />
     </div>
 </section>

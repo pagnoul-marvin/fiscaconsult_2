@@ -1,0 +1,90 @@
+.nav_active {
+    font-weight: bold;
+}
+
+.page_heading {
+    font-family: 'Ramillas', serif;
+    font-size: $big_large;
+    text-align: center;
+    padding: 2em 3.5em 1em;
+    color: $very_dark_brown;
+}
+
+.page_cta {
+    @include flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 1.5em;
+    padding: 3em 3.5em 4em;
+    background-color: $light_beige;
+
+    &_text {
+        font-family: 'Montserrat', sans-serif;
+        font-size: $small_medium_plus;
+        text-align: center;
+        max-width: 40em;
+    }
+
+    &_btns {
+        @include flex;
+        gap: 1em;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+
+.page_seo {
+    padding: 2.5em 3.5em;
+    background-color: $invisible_beige;
+
+    &_title {
+        font-size: $big_medium;
+        color: $brown;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    &_content {
+        font-family: 'Montserrat', sans-serif;
+        font-size: $small_medium_plus;
+        line-height: 1.6;
+        max-width: 52em;
+        margin: 0 auto;
+
+        p + p {
+            margin-top: 1em;
+        }
+    }
+}
+
+.page_legal {
+    padding: 0 3.5em 4em;
+    max-width: 48em;
+    margin: 0 auto;
+
+    &_section {
+        margin-top: 2.5em;
+    }
+
+    &_title {
+        font-size: $big;
+        color: $brown;
+        margin-bottom: 0.75em;
+    }
+
+    &_content {
+        font-family: 'Montserrat', sans-serif;
+        font-size: $small_medium_plus;
+        line-height: 1.6;
+
+        p + p {
+            margin-top: 0.75em;
+        }
+    }
+}

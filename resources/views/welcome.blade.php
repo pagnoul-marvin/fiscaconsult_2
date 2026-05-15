@@ -20,6 +20,7 @@
         <meta property="og:type" content="website">
         <meta property="og:locale" content="fr_BE">
 
+        @verbatim
         <script type="application/ld+json">
             {
               "@context": "https://schema.org",
@@ -52,6 +53,7 @@
               }
             }
         </script>
+        @endverbatim
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>

@@ -130,6 +130,11 @@
 }
 
 .main_nav {
+    &_logo_link {
+        display: inline-block;
+        line-height: 0;
+    }
+
     @include flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -877,4 +882,5 @@
     }
 }
 
+@import "pages";
 @import "media_queries";

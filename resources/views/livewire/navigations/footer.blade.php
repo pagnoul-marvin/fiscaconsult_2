@@ -6,14 +6,20 @@
             <h2 class="primary_title bold">Navigation principale</h2>
 
             <ul class="footer_nav_container_list">
-                <li class="footer_nav_container_list_item"><a href="#team" title="Aller vers la section notre &eacute;quipe"
+                <li class="footer_nav_container_list_item"><a href="{{ route('home') }}" title="Aller vers l'accueil"
+                                                    class="footer_nav_container_list_item_link link">Accueil</a></li>
+                <li class="footer_nav_container_list_item"><a href="{{ route('about') }}" title="Aller vers la page à propos"
+                                                    class="footer_nav_container_list_item_link link">&Agrave; propos</a></li>
+                <li class="footer_nav_container_list_item"><a href="{{ route('about') }}#team" title="Aller vers la section notre équipe"
                                                     class="footer_nav_container_list_item_link link">Notre &eacute;quipe</a></li>
-                <li class="footer_nav_container_list_item"><a href="#office" title="Aller vers la section notre cabinet"
+                <li class="footer_nav_container_list_item"><a href="{{ route('about') }}#office" title="Aller vers la section notre cabinet"
                                                     class="footer_nav_container_list_item_link link">Notre cabinet</a></li>
-                <li class="footer_nav_container_list_item"><a href="#mission" title="Aller vers la section notre mission"
+                <li class="footer_nav_container_list_item"><a href="{{ route('about') }}#mission" title="Aller vers la section notre mission"
                                                     class="footer_nav_container_list_item_link link">Notre mission</a></li>
-                <li class="footer_nav_container_list_item"><a href="#expertise" title="Aller vers la section notre expertise"
+                <li class="footer_nav_container_list_item"><a href="{{ route('home') }}#expertise" title="Aller vers la section notre expertise"
                                                     class="footer_nav_container_list_item_link link">Notre expertise</a></li>
+                <li class="footer_nav_container_list_item"><a href="{{ route('contact') }}" title="Aller vers la page contact"
+                                                    class="footer_nav_container_list_item_link link">Contact</a></li>
             </ul>
 
         </nav>
@@ -25,18 +31,17 @@
                 <li class="footer_nav_container_list_item"><a class="footer_nav_container_list_item_link link" href="mailto:olivier.pagnoul@fiscaconsult.com" title="Envoyer un mail" itemprop="email">olivier.pagnoul@fiscaconsult.com</a></li>
                 <li class="footer_nav_container_list_item"><a class="footer_nav_container_list_item_link link" href="tel:+32476262639" title="T&eacute;l&eacute;phoner" itemprop="telephone">+32 (0) 476.26.26.39</a></li>
                 <li class="footer_nav_container_list_item" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-                    <a class="footer_nav_container_list_item_link link" href="https://www.google.com/maps/place/Rue+Ann-Sophie+Charlier+29,+4651+Herve/@50.6359711,5.7898318,17z/data=!3m1!4b1!4m5!3m4!1s0x47c08cb426c14471:0x41d55042cf243e6d!8m2!3d50.6359711!4d5.7924067?entry=ttu&g_ep=EgoyMDI2MDMwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" title="Voir sur Google Maps" hreflang="fr"><span itemprop="streetAddress">Rue Ann-Sophie Charlier, 29/7</span> <span itemprop="postalCode">4650</span> <span itemprop="addressLocality">Herve</span></a>
+                    <a class="footer_nav_container_list_item_link link" href="https://www.google.com/maps/place/Rue+Ann-Sophie+Charlier+29,+4651+Herve/@50.6359711,5.7898318,17z/data=!3m1!4b1!4m5!3m4!1s0x47c08cb426c14471:0x41d55042cf243e6d!8m2!3d50.6359711!4d5.7924067?entry=ttu&g_ep=EgoyMDI2MDMwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" title="Voir sur Google Maps" hreflang="fr"><span itemprop="streetAddress">Rue Ann-Sophie Charlier, 29/7</span> <span itemprop="postalCode">4650</span> <span itemprop="addressLocality">Herve</span></a>
                 </li>
                 <li>
-                    <a class="footer_nav_container_list_item_link link" href="https://www.google.com/maps/place/Cle+Buisness+Center/@50.701033,5.417813,17z/data=!3m1!4b1!4m6!3m5!1s0x47c0fdee23828aff:0xb1975efc73ea6166!8m2!3d50.701033!4d5.4203879!16s%2Fg%2F11tff59m38?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" title="Voir sur Google Maps" hreflang="fr"><span itemprop="streetAddress">Grand&apos;Route 18A</span> (Centre d&apos;Affaires CLEBC), <span itemprop="postalCode">4367</span> <span itemprop="addressLocality">Crisn&eacute;e</span></a>
+                    <a class="footer_nav_container_list_item_link link" href="https://www.google.com/maps/place/Cle+Buisness+Center/@50.701033,5.417813,17z/data=!3m1!4b1!4m6!3m5!1s0x47c0fdee23828aff:0xb1975efc73ea6166!8m2!3d50.701033!4d5.4203879!16s%2Fg%2F11tff59m38?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" title="Voir sur Google Maps" hreflang="fr"><span itemprop="streetAddress">Grand&apos;Route 18A</span> (Centre d&apos;Affaires CLEBC), <span itemprop="postalCode">4367</span> <span itemprop="addressLocality">Crisn&eacute;e</span></a>
                 </li>
             </ul>
 
         </nav>
 
         <div class="footer_nav_logo">
-            <img loading="lazy" class="logo" src="{{asset('assets/images/optimized/ITAA_logo.webp')}}" alt="Logo ITAA" width="300"
-                 height="238">
+            <x-responsive-image name="ITAA_logo" alt="Logo ITAA" :width="300" :height="238" class="logo" :widths="[300]" sizes="150px"/>
 
             <x-app-logo/>
         </div>
@@ -45,8 +50,13 @@
 
     <ul class="footer_list">
         <li class="footer_list_item"><a
-                href="{{asset('assets/docs/rgpd.pdf')}}"
-                hreflang="fr" target="_blank" rel="noopener noreferrer" title="Voir les mentions l&eacute;gales" class="link"><abbr
+                href="{{ route('legal') }}"
+                hreflang="fr" title="Voir les mentions l&eacute;gales" class="link"><abbr
+                    title="Mentions l&eacute;gales" class="bold">Mentions l&eacute;gales</abbr></a>
+        </li>
+        <li class="footer_list_item"><a
+                href="{{ asset('assets/docs/rgpd.pdf') }}"
+                hreflang="fr" target="_blank" rel="noopener noreferrer" title="Voir la politique RGPD (PDF)" class="link"><abbr
                     title="R&egrave;glement G&eacute;n&eacute;ral sur la Protection des Donn&eacute;es" class="bold">RGPD</abbr></a>
         </li>
         <li class="footer_list_item">Cr&eacute;&eacute; par Marvin Pagnoul et <a class="link" href="https://www.homtimiste.com/" hreflang="fr"
