@@ -102,7 +102,7 @@
 
     <body id="top" class="body @yield('body_class')" itemscope itemtype="https://schema.org/AccountingService">
         <header>
-            <livewire:navigations.main/>
+            @include('partials.nav.main')
         </header>
 
         <main>
@@ -124,6 +124,6 @@
             </svg>
         </a>
 
-        <livewire:navigations.footer/>
+        @include('partials.nav.footer')
     </body>
 </html>

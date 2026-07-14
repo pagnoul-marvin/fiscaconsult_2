@@ -7,5 +7,5 @@
 @section('content')
     <h1 class="page_heading">Nous contacter</h1>
 
-    <livewire:welcome-page.contact/>
+    @include('partials.sections.contact')
 @endsection

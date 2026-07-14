@@ -2,18 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
     <url>
     <loc>https://www.fiscaconsult.com</loc>
+    <lastmod>2026-07-14T09:27:38+00:00</lastmod>
     <priority>1.0</priority>
-            </url>
+    <image:image>
+    <image:loc>https://www.fiscaconsult.com/assets/images/optimized/office_3-800.webp</image:loc>
+</image:image>
+<image:image>
+    <image:loc>https://www.fiscaconsult.com/assets/images/optimized/nathalie-500.webp</image:loc>
+</image:image>
+<image:image>
+    <image:loc>https://www.fiscaconsult.com/assets/images/optimized/team-500.webp</image:loc>
+</image:image>
+        </url>
     <url>
     <loc>https://www.fiscaconsult.com/a-propos</loc>
+    <lastmod>2026-07-14T09:27:38+00:00</lastmod>
     <priority>0.9</priority>
             </url>
     <url>
     <loc>https://www.fiscaconsult.com/contact</loc>
+    <lastmod>2026-07-14T09:27:38+00:00</lastmod>
     <priority>0.9</priority>
             </url>
     <url>
     <loc>https://www.fiscaconsult.com/mentions-legales</loc>
+    <lastmod>2026-07-14T09:27:38+00:00</lastmod>
     <priority>0.3</priority>
             </url>
 </urlset>

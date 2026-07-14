@@ -7,25 +7,25 @@
         <ul class="inter_nav_list">
             <li class="inter_nav_list_item">
                 <div class="img_container">
-                    <x-responsive-image name="team" alt="Image montrant une personne travaillant avec une calculatrice" :width="500" :height="625" :widths="[400, 500]" sizes="(max-width: 768px) 50vw, 25vw"/>
+                    <x-responsive-image name="team" alt="Image montrant une personne travaillant avec une calculatrice" :width="500" :height="625" :widths="[400, 500]" sizes="(max-width: 445px) 100vw, (max-width: 780px) 50vw, 25vw"/>
                 </div>
                 <a href="{{ route('about') }}#team" title="Aller vers la section notre &eacute;quipe" class="inter_nav_list_item_link">Notre &eacute;quipe</a>
             </li>
             <li class="inter_nav_list_item">
                 <div class="img_container">
-                    <x-responsive-image name="office" alt="Image montrant une loupe et une calculatrice" :width="500" :height="625" :widths="[400, 500]" sizes="(max-width: 768px) 50vw, 25vw"/>
+                    <x-responsive-image name="office" alt="Image montrant une loupe et une calculatrice" :width="500" :height="625" :widths="[400, 500]" sizes="(max-width: 445px) 100vw, (max-width: 780px) 50vw, 25vw"/>
                 </div>
                 <a href="{{ route('about') }}#office" title="Aller vers la section notre cabinet" class="inter_nav_list_item_link">Notre cabinet</a>
             </li>
             <li class="inter_nav_list_item">
                 <div class="img_container">
-                    <x-responsive-image name="mission" alt="Image montrant un carnet de note" :width="500" :height="625" :widths="[400, 500]" sizes="(max-width: 768px) 50vw, 25vw"/>
+                    <x-responsive-image name="mission" alt="Image montrant un carnet de note" :width="500" :height="625" :widths="[400, 500]" sizes="(max-width: 445px) 100vw, (max-width: 780px) 50vw, 25vw"/>
                 </div>
                 <a href="{{ route('about') }}#mission" title="Aller vers la section notre mission" class="inter_nav_list_item_link">Notre mission</a>
             </li>
             <li class="inter_nav_list_item">
                 <div class="img_container">
-                    <x-responsive-image name="expertise" alt="Image montrant une personne travaillant avec une tablette tactile" :width="500" :height="625" :widths="[400, 500]" sizes="(max-width: 768px) 50vw, 25vw"/>
+                    <x-responsive-image name="expertise" alt="Image montrant une personne travaillant avec une tablette tactile" :width="500" :height="625" :widths="[400, 500]" sizes="(max-width: 445px) 100vw, (max-width: 780px) 50vw, 25vw"/>
                 </div>
                 <a href="{{ route('home') }}#expertise" title="Aller vers la section notre expertise" class="inter_nav_list_item_link">Notre expertise</a>
             </li>

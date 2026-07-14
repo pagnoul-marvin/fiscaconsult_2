@@ -16,10 +16,10 @@
         </div>
     </section>
 
-    <livewire:welcome-page.team/>
-    <livewire:welcome-page.office/>
-    <livewire:welcome-page.mission/>
-    <livewire:welcome-page.entrepreneur/>
+    @include('partials.sections.team')
+    @include('partials.sections.office')
+    @include('partials.sections.mission')
+    @include('partials.sections.entrepreneur')
 
     <section class="page_seo" aria-labelledby="seo-crisnee-title">
         <h2 id="seo-crisnee-title" class="page_seo_title primary_title">Votre comptable &agrave; Crisn&eacute;e</h2>

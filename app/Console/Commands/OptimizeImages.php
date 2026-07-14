@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\File;
 use Intervention\Image\Drivers\Gd\Driver;
 use Intervention\Image\ImageManager;
@@ -25,7 +26,7 @@ class OptimizeImages extends Command
             File::makeDirectory($destinationPath, 0755, true);
         }
 
-        $manager = new ImageManager(new Driver());
+        $manager = new ImageManager(new Driver);
         $files = File::files($sourcePath);
 
         foreach ($files as $file) {
@@ -42,15 +43,7 @@ class OptimizeImages extends Command
             $sourceWidth = $sourceImage->width();
             $effectiveMax = min($maxWidth, $sourceWidth);
 
-            $widthsToGenerate = collect($this->defaultWidths)
-                ->filter(fn (int $w) => $w <= $effectiveMax)
-                ->values();
-
-            if ($widthsToGenerate->isEmpty()) {
-                $widthsToGenerate = collect([$effectiveMax]);
-            } elseif (! $widthsToGenerate->contains($effectiveMax)) {
-                $widthsToGenerate->push($effectiveMax);
-            }
+            $widthsToGenerate = $this->resolveWidthsForFile($filename, $effectiveMax);
 
             foreach ($widthsToGenerate->unique()->sort() as $targetWidth) {
                 $img = $manager->read($file->getPathname());
@@ -67,9 +60,29 @@ class OptimizeImages extends Command
 
         $this->cleanLegacyWebp($destinationPath);
 
-        $this->info('✅ Toutes les images ont été compressées et redimensionnées.');
+        $this->info('Toutes les images ont été compressées et redimensionnées.');
 
         return self::SUCCESS;
+    }
+
+    /** @return Collection<int, int> */
+    private function resolveWidthsForFile(string $filename, int $effectiveMax): Collection
+    {
+        $widths = str_contains($filename, 'office_3')
+            ? [400, 600, 800]
+            : $this->defaultWidths;
+
+        $widthsToGenerate = collect($widths)
+            ->filter(fn (int $w) => $w <= $effectiveMax)
+            ->values();
+
+        if ($widthsToGenerate->isEmpty()) {
+            $widthsToGenerate = collect([$effectiveMax]);
+        } elseif (! $widthsToGenerate->contains($effectiveMax)) {
+            $widthsToGenerate->push($effectiveMax);
+        }
+
+        return $widthsToGenerate;
     }
 
     private function resolveMaxWidth(string $filename): int

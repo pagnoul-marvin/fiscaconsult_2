@@ -7,7 +7,7 @@
             <p class="mission_header_text_paragraph">Vous simplifier la vie, avec clart&eacute; et expertise.</p>
         </div>
         <div class="img_container">
-            <x-responsive-image name="oli_nath_office" alt="Photo d'Olivier dans son bureau" :width="800" :height="600" class="mission_header_img img_container_img" :widths="[400, 800]" sizes="(max-width: 768px) 100vw, 50vw"/>
+            <x-responsive-image name="oli_nath_office" alt="Photo d'Olivier dans son bureau" :width="800" :height="600" class="mission_header_img img_container_img" :widths="[400, 800]" sizes="(max-width: 830px) 100vw, 50vw"/>
         </div>
     </div>
 

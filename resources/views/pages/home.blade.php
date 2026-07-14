@@ -4,12 +4,19 @@
 @section('description', 'FiscaConsult – Expert-comptable fiscaliste à Crisnée et Herve. Olivier Pagnoul et Nathalie Brugmans accompagnent indépendants, PME et professions libérales depuis 1989.')
 @section('canonical', config('site.url'))
 
+@push('head')
+    <link rel="preload" as="image"
+          href="{{ asset('assets/images/optimized/office_3-400.webp') }}"
+          imagesrcset="{{ asset('assets/images/optimized/office_3-400.webp') }} 400w, {{ asset('assets/images/optimized/office_3-600.webp') }} 600w, {{ asset('assets/images/optimized/office_3-800.webp') }} 800w"
+          imagesizes="(max-width: 920px) 100vw, 50vw">
+@endpush
+
 @section('content')
     <h1 class="page_heading hidden"><span itemprop="name">FiscaConsult</span> – Comptable &agrave; Li&egrave;ge, Crisn&eacute;e & Herve</h1>
 
-    <livewire:welcome-page.presentation/>
-    <livewire:welcome-page.inter/>
-    <livewire:welcome-page.expertise/>
+    @include('partials.sections.presentation')
+    @include('partials.sections.inter')
+    @include('partials.sections.expertise')
 
     <section class="page_cta">
         <p class="page_cta_text">D&eacute;couvrez notre &eacute;quipe, notre cabinet et notre mission, ou contactez-nous directement.</p>

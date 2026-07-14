@@ -4,7 +4,7 @@
     'width',
     'height',
     'class' => 'img_container_img',
-    'sizes' => '(max-width: 768px) 100vw, 50vw',
+    'sizes' => '(max-width: 920px) 100vw, 50vw',
     'loading' => 'lazy',
     'fetchpriority' => null,
     'widths' => [400, 800, 1200],
@@ -21,9 +21,7 @@
         $availableWidths = collect($widths);
     }
 
-    $defaultWidth = $availableWidths->contains(800)
-        ? 800
-        : $availableWidths->last();
+    $defaultWidth = $availableWidths->first();
 
     $srcset = $availableWidths
         ->map(fn (int $w) => asset("{$basePath}-{$w}.webp").' '.$w.'w')

@@ -21,8 +21,9 @@
             alt="Photo montrant Olivier dans son bureau"
             :width="800"
             :height="1067"
+            :widths="[400, 600, 800]"
             eager
-            sizes="(max-width: 768px) 100vw, 50vw"
+            sizes="(max-width: 920px) 100vw, 50vw"
         />
     </div>
 </section>
